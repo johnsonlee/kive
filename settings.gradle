@@ -1,0 +1,4 @@
+rootProject.name = 'create-vue-kotlin-app'
+
+include ':app'
+include ':vue'

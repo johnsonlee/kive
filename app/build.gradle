@@ -1,0 +1,11 @@
+dependencies {
+    compile project(':vue')
+}
+
+compileKotlin2Js {
+    kotlinOptions.outputFile = "${projectDir}/generated/${project.name}.js"
+    kotlinOptions.moduleKind = "commonjs"
+    kotlinOptions.sourceMap = true
+}
+
+assemble.dependsOn compileKotlin2Js
